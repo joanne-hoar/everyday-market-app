@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Can of Beans",
+    "image": "can-of-beans.jpg",
+    "description": "Full of magical moments, this can of beans could be yours!",
+    "category": "grocery"
+  },
+  {
+    "name": "Bag of Crisps",
+    "image": "bag-of-crisps.jpg",
+    "description": "That should say chips. Any flavour you want.",
+    "category": "grocery"
+  },
+  {
+    "name": "Gummy Bears",
+    "image": "gummy-bears.jpg",
+    "description": "Be sure to specify quantity as we have too many and will send you a lot.",
+    "category": "grocery"
+  },
+  {
+    "name": "T-Shirt",
+    "image": "t-shirt.jpg",
+    "description": "Wear this t-shirt and you will have good luck.",
+    "category": "clothing"
+  },
+  {
+    "name": "Hobo Bag",
+    "image": "hobo-bag.jpg",
+    "description": "Fits everything you need.",
+    "category": "clothing"
+  },
+  {
+    "name": "Shoes",
+    "image": "shoes.jpg",
+    "description": "Shown one, comes in pairs.",
+    "category": "clothing"
+  },
+  {
+    "name": "Shorts",
+    "image": "shorts.jpg",
+    "description": "Complete the look.",
+    "category": "clothing"
+  },
+  {
+    "name": "Postcard",
+    "image": "postcard.jpg",
+    "description": "Let them know that you're thinking of them.",
+    "category": "stationary"
+  },
+  {
+    "name": "Pens",
+    "image": "pens.jpg",
+    "description": "Contains ink.",
+    "category": "stationary"
+  }
+]

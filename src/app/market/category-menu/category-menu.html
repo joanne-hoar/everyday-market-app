@@ -1,0 +1,17 @@
+<!-- Category menu container -->
+<div class="category-menu">
+  <h2>Browse Categories</h2>
+  
+  <!-- Responsive grid layout for category items -->
+  <div class="categories-grid">
+    <!-- Modern Angular 17+ @for control flow syntax -->
+    <!-- track category.id provides optimal change detection performance -->
+    @for (category of categories; track category.id) {
+      <!-- Individual category item with property and event binding -->
+      <app-category-menu-item 
+        [categoryName]="category.name" 
+        (itemClicked)="onItemClicked(category)">
+      </app-category-menu-item>
+    }
+  </div>
+</div>

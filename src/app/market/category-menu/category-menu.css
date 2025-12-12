@@ -1,0 +1,34 @@
+.category-menu {
+  padding: 1rem 0.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.category-menu h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.categories-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .categories-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .category-menu {
+    padding: 0.5rem;
+  }
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+}

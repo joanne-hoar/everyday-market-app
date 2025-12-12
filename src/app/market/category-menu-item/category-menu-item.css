@@ -1,0 +1,59 @@
+/* Category card with cottage core design - best practice external CSS */
+.category-card {
+  border: 1px solid #ccc;
+  padding: 10px 6px;
+  border-radius: 8px;
+  max-width: 220px;
+  min-width: 0;
+  text-align: center;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.category-title {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.category-description {
+  color: #666;
+  font-style: italic;
+  margin: 0 0 12px 0;
+  font-size: 0.9rem;
+}
+
+/* Interactive content area */
+.category-content {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  background: #f9f9f9;
+  transition: background 0.2s, transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-content:hover {
+  background: #f0f0f0;
+}
+
+/* Arrow styling for cottage aesthetic */
+.category-arrow {
+  color: #6d4c41;
+  font-weight: 600;
+  font-family: Georgia, 'Times New Roman', serif;
+  transition: transform 0.3s ease;
+}
+
+.category-content:hover .category-arrow {
+  transform: translateX(5px);
+}

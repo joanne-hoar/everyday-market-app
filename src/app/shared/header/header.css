@@ -1,0 +1,98 @@
+#header {
+    background: linear-gradient(135deg, #e7cfc3 0%, #be7d67 100%);
+    color: #f5f5dc;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#header nav {
+    margin-bottom: 1rem;
+}
+
+#header h1 {
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2d5016;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.header-content {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.welcome-message {
+    color: #4a5d23;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.version-info {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.angular-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    color: #2d5016;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.angular-badge:hover {
+    transform: scale(1.05);
+}
+
+.storefront-image {
+    max-width: 400px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Navigation buttons with dark green and brown theme */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 0 8px;
+    background: linear-gradient(145deg, #4a5d23 0%, #2d5016 100%);
+    color: #f5f5dc;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 2px solid #6d4c41;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    outline: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.button:hover {
+    background: linear-gradient(145deg, #5d7a2f 0%, #3e6b1f 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    border-color: #8d6e63;
+}
+
+.activebutton {
+    background: linear-gradient(145deg, #6d4c41 0%, #3e2723 100%) !important;
+    border-color: #8d6e63 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4) !important;
+    transform: translateY(0) !important;
+}

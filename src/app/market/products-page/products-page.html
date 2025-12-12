@@ -1,0 +1,33 @@
+<!-- Main products page container -->
+<div class="products-page">
+  <!-- Welcome section with introductory content -->
+  <div class="page-intro">
+    <h1>Welcome to the Market</h1>
+    <p>Discover amazing products across our carefully curated categories. Click on any category below to explore what we have to offer!</p>
+  </div>
+  
+  <!-- Category menu component with property and event binding -->
+  <app-category-menu 
+    [categories]="categoryList"
+    (categorySelected)="onCategorySelected($event)">
+  </app-category-menu>
+  
+  <!-- Products display section -->
+  @if (selectedCategory) {
+    <div class="products-section">
+      <h2>{{ selectedCategory | titlecase }} Products</h2>
+      <div class="products-grid">
+        @for (product of filteredProducts; track product.id) {
+          <div class="product-card">
+            <img [src]="'products/' + product.image" [alt]="product.name" />
+            <div class="product-info">
+              <h3>{{ product.name }}</h3>
+              <p>{{ product.description }}</p>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  }
+  
+</div>

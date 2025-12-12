@@ -1,0 +1,171 @@
+/**
+ * Footer Component Styles - Cottage Core Aesthetic
+ * 
+ * Provides styling for the global footer component with warm earth tones,
+ * cottage-inspired design matching the header, and elegant typography.
+ */
+
+.footer {
+  background: linear-gradient(135deg, #be7d67 0%, #e7cfc3 100%);
+  color: #2d5016;
+  padding: 2rem 0;
+  box-shadow: 0 -4px 15px rgba(139, 69, 19, 0.2);
+  margin-top: auto;
+  border-top: 3px solid #8b4513;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Copyright and Technology Badge */
+.copyright {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #2d5016;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.footer-tech {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.angular-badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: #2d5016;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.angular-badge:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Credits Section */
+.credits {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.design-credit,
+.ai-credit {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #3d6b1f;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.design-credit strong,
+.ai-credit strong {
+  color: #2d5016;
+  font-weight: 700;
+}
+
+.design-credit a,
+.ai-credit a {
+  color: #2d5016;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.design-credit a:hover,
+.ai-credit a:hover {
+  color: #3d6b1f;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .footer-section {
+    align-items: center;
+  }
+  
+  .credits {
+    text-align: center;
+  }
+  
+  .copyright {
+    font-size: 1rem;
+  }
+  
+  .design-credit,
+  .ai-credit {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5rem 0;
+  }
+  
+  .footer-container {
+    padding: 0 0.5rem;
+  }
+  
+  .angular-badge {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .copyright {
+    font-size: 0.95rem;
+  }
+  
+  .design-credit,
+  .ai-credit {
+    font-size: 0.8rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .footer {
+    background: white;
+    color: black;
+    box-shadow: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  .angular-badge {
+    background: #f0f0f0;
+    color: black;
+    border: 1px solid #ccc;
+  }
+}

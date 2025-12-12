@@ -1,0 +1,16 @@
+<!-- Header with routing and cottage core styling -->
+<div id="header">
+    <nav>
+        <!-- Navigation links for routing -->
+        <a class="button" routerLink="/register" routerLinkActive="activebutton">Register</a>
+        <a class="button" routerLink="/products" routerLinkActive="activebutton">Products</a>
+    </nav>
+    <!-- Main heading -->
+    <h1>{{ title || "Front End Frameworks Everyday Market" }}</h1>
+    <div class="version-info">
+        <a href="https://angular.dev/" target="_blank" rel="noopener noreferrer" class="angular-badge">Angular {{ angularVersion }}</a>
+    </div>
+    <div class="header-content">
+        <img src="cute-storefront.jpg" alt="Store Front" class="storefront-image" />
+    </div>
+</div>

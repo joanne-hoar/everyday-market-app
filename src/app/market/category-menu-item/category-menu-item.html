@@ -1,0 +1,12 @@
+<!-- Product card with cottage core styling -->
+<div class="category-card">
+  <!-- Interactive content area -->
+  <div class="category-content" 
+       (click)="onItemClick()" 
+       (keydown.enter)="onItemClick()"
+       (keydown.space)="onItemClick()"
+       tabindex="0"
+       role="button">
+    <div class="category-arrow">{{ categoryName }} →</div>
+  </div>
+</div>
